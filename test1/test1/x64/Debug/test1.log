@@ -1,0 +1,16 @@
+﻿  test.c
+  test1.c
+  test10.c
+  test11.c
+F:\C语言学习内容\test1\test1\test11.c(7,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+F:\C语言学习内容\test1\test1\test11.c(7,9): message : 请考虑在格式字符串中使用“%zd”
+  test2.c
+  test3.c
+  test4.c
+  test5.c
+  test6.c
+  test7.c
+  test8.c
+  test9.c
+  正在生成代码...
+  test1.vcxproj -> F:\C语言学习内容\test1\x64\Debug\test1.exe
