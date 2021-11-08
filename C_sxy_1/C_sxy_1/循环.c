@@ -1,14 +1,46 @@
-#define _CRT_SECURE_NO_WARNINGS
+#define _CRT_SECURE_NO_WARNINGS 1
+//例子：
 #include <stdio.h>
 int main()
 {
 	int ch = 0;
-	//ctrl+z可以结束getchar()
-	while ((ch = getchar()) != EOF) {
-		putchar(ch);
+	char password[20] = {0};
+	int ret = 0;
+	printf("请输入密码:>");
+	scanf("%s", &password);//输入密码，并存放在password数组中
+	//缓冲区还剩一个\n
+	//读取一下\n
+	while ((ch = getchar() != '\n'))
+	{
+		;
 	}
-	return 0;
+	
+	printf("请确认(Y/N):->");
+	ret = getchar();
+	if (ret == 'Y') {
+		printf("确认成功");
+	}
+	else {
+		printf("放弃确认");
+		return 0;
+	}
 }
+
+
+
+
+
+//#include <stdio.h>
+//int main()
+//{
+//	int ch = 0;
+//	//ctrl+z可以结束getchar()
+//	//EOF-end of file 文件结束标志
+//	while ((ch = getchar()) != EOF) {//接收一个字符放入ch中，看是否等于EOF
+//		putchar(ch);//打印出ch
+//	}
+//	return 0;
+//}
 
 
 
